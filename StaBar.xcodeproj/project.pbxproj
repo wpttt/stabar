@@ -105,6 +105,7 @@
 		isa = PBXGroup;
 		children = (
 			2A2B3C4D5E6F7013,
+			2A2B3C4D5E6F7015,
 		);
 		path = Views;
 		sourceTree = "<group>";
@@ -113,6 +114,12 @@
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.swift;
 		path = MenuBarView.swift;
+		sourceTree = "<group>";
+	};
+	2A2B3C4D5E6F7015 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = CompactStatusView.swift;
 		sourceTree = "<group>";
 	};
 		1A1B2C3D4E5F6AAE = {
@@ -206,7 +213,8 @@
 				2A2B3C4D5E6F700E,
 				2A2B3C4D5E6F700F,
 				2A2B3C4D5E6F7011,
-				2A2B3C4D5E6F7014,
+			2A2B3C4D5E6F7014,
+			2A2B3C4D5E6F7016,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +613,10 @@
 	2A2B3C4D5E6F7014 = {
 		isa = PBXBuildFile;
 		fileRef = 2A2B3C4D5E6F7013;
+	};
+	2A2B3C4D5E6F7016 = {
+		isa = PBXBuildFile;
+		fileRef = 2A2B3C4D5E6F7015;
 	};
 	};
 	rootObject = 1A1B2C3D4E5F6AD7;
