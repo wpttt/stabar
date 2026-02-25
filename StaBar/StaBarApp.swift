@@ -6,7 +6,7 @@ struct StaBarApp: App {
     
     var body: some Scene {
         MenuBarExtra("StaBar", systemImage: "chart.bar.fill") {
-            ContentView()
+            MenuBarView()
         }
         .menuBarExtraStyle(.window)
     }
