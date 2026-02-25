@@ -1,27 +1,28 @@
 import SwiftUI
 
 struct MenuBarView: View {
+    @State private var viewModel = MetricsViewModel.shared
     @State private var isSettingsPresented = false
     
     var body: some View {
         VStack(spacing: 0) {
-            // Header row with compact metrics display (placeholder)
-            HStack {
-                Text("C --% G --% R --% D --% ↑-- ↓--")
-                    .font(.system(size: 12, weight: .medium, design: .monospaced))
-            }
+            // Compact status view with live metrics
+            CompactStatusView(
+                preferences: PreferencesStore.shared,
+                cpuUsage: viewModel.cpuUsage,
+                gpuUsage: viewModel.gpuUsage,
+                ramUsage: viewModel.ramUsage,
+                diskUsage: viewModel.diskUsage,
+                netUpload: viewModel.netUpload,
+                netDownload: viewModel.netDownload
+            )
             .padding(.horizontal, 12)
             .padding(.vertical, 8)
             
             Divider()
             
-            // Settings panel placeholder
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Settings")
-                    .font(.headline)
-                Toggle("Show CPU", isOn: .constant(true))
-                Toggle("Show GPU", isOn: .constant(true))
-            }
+            // Settings panel
+            SettingsView(preferences: PreferencesStore.shared)
             .padding(12)
         }
         .frame(width: 280)

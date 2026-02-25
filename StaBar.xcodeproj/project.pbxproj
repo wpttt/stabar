@@ -23,6 +23,7 @@
 			1A1B2C3D4E5F6AAE,
 			2A2B3C4D5E6F7002,
 			2A2B3C4D5E6F7012,
+			2A2B3C4D5E6F7019,
 		);
 		path = StaBar;
 		sourceTree = "<group>";
@@ -129,6 +130,20 @@
 		path = CompactStatusView.swift;
 		sourceTree = "<group>";
 	};
+	2A2B3C4D5E6F7019 = {
+		isa = PBXGroup;
+		children = (
+			2A2B3C4D5E6F701A,
+		);
+		path = ViewModels;
+		sourceTree = "<group>";
+	};
+	2A2B3C4D5E6F701A = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = MetricsViewModel.swift;
+		sourceTree = "<group>";
+	};
 		1A1B2C3D4E5F6AAE = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +238,7 @@
 			2A2B3C4D5E6F7014,
 			2A2B3C4D5E6F7016,
 			2A2B3C4D5E6F7018,
+				2A2B3C4D5E6F701B,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +645,10 @@
 	2A2B3C4D5E6F7016 = {
 		isa = PBXBuildFile;
 		fileRef = 2A2B3C4D5E6F7015;
+	};
+	2A2B3C4D5E6F701B = {
+		isa = PBXBuildFile;
+		fileRef = 2A2B3C4D5E6F701A;
 	};
 	};
 	rootObject = 1A1B2C3D4E5F6AD7;
