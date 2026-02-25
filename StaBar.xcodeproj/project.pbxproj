@@ -106,6 +106,7 @@
 		children = (
 			2A2B3C4D5E6F7013,
 			2A2B3C4D5E6F7015,
+			2A2B3C4D5E6F7017,
 		);
 		path = Views;
 		sourceTree = "<group>";
@@ -114,6 +115,12 @@
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.swift;
 		path = MenuBarView.swift;
+		sourceTree = "<group>";
+	};
+	2A2B3C4D5E6F7017 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = SettingsView.swift;
 		sourceTree = "<group>";
 	};
 	2A2B3C4D5E6F7015 = {
@@ -215,6 +222,7 @@
 				2A2B3C4D5E6F7011,
 			2A2B3C4D5E6F7014,
 			2A2B3C4D5E6F7016,
+			2A2B3C4D5E6F7018,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +621,10 @@
 	2A2B3C4D5E6F7014 = {
 		isa = PBXBuildFile;
 		fileRef = 2A2B3C4D5E6F7013;
+	};
+	2A2B3C4D5E6F7018 = {
+		isa = PBXBuildFile;
+		fileRef = 2A2B3C4D5E6F7017;
 	};
 	2A2B3C4D5E6F7016 = {
 		isa = PBXBuildFile;
