@@ -8,10 +8,20 @@
 		1A1B2C3D4E5F6A7B = {
 			isa = PBXGroup;
 			children = (
+				1A1B2C3D4E5F6A7C,
+				1A1B2C3D4E5F6AC1,
+				1A1B2C3D4E5F6ADA,
+			);
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6A7C = {
+			isa = PBXGroup;
+			children = (
 				1A1B2C3D4E5F6A8C,
 				1A1B2C3D4E5F6A9D,
 				1A1B2C3D4E5F6AAE,
 			);
+			path = StaBar;
 			sourceTree = "<group>";
 		};
 		1A1B2C3D4E5F6A8C = {
@@ -29,15 +39,38 @@
 		1A1B2C3D4E5F6AAE = {
 			isa = PBXGroup;
 			children = (
-				1A1B2C3D4E5F6ABF,
+				1A1B2C3D4E5F6AAF,
+				1A1B2C3D4E5F6AB0,
 			);
 			path = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		1A1B2C3D4E5F6ABF = {
+		1A1B2C3D4E5F6AAF = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6AB1,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AB0 = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6AB2,
+			);
+			path = AccentColor.colorset;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AB1 = {
 			isa = PBXFileReference;
-			lastKnownFileType = folder.assetcatalog;
-			path = "Contents.json";
+			lastKnownFileType = text.json;
+			path = Contents.json;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AB2 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.json;
+			path = Contents.json;
 			sourceTree = "<group>";
 		};
 		1A1B2C3D4E5F6AC0 = {
@@ -304,7 +337,7 @@
 		1A1B2C3D4E5F6AD9 = {
 			isa = PBXGroup;
 			children = (
-				1A1B2C3D4E5F6A7B,
+				1A1B2C3D4E5F6A7C,
 				1A1B2C3D4E5F6AC1,
 				1A1B2C3D4E5F6ADA,
 			);
