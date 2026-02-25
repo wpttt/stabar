@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		1A1B2C3D4E5F6A7B = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6A8C,
+				1A1B2C3D4E5F6A9D,
+				1A1B2C3D4E5F6AAE,
+			);
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6A8C = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = StaBarApp.swift;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6A9D = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = ContentView.swift;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AAE = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6ABF,
+			);
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6ABF = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			path = "Contents.json";
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AC0 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = StaBarTests.swift;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AC1 = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6AC0,
+			);
+			path = StaBarTests;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6AC2 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1B2C3D4E5F6AC3;
+			buildPhases = (
+				1A1B2C3D4E5F6AC4,
+				1A1B2C3D4E5F6AC5,
+				1A1B2C3D4E5F6AC6,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaBar;
+			productName = StaBar;
+			productReference = 1A1B2C3D4E5F6AC7;
+			productType = "com.apple.product-type.application";
+		};
+		1A1B2C3D4E5F6AC3 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6AC8,
+				1A1B2C3D4E5F6AC9,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1B2C3D4E5F6AC4 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6ACA,
+				1A1B2C3D4E5F6ACB,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1B2C3D4E5F6AC5 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1B2C3D4E5F6AC6 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6ACC,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1B2C3D4E5F6AC7 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = StaBar.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A1B2C3D4E5F6AC8 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUNDLE_IDENTIFIER = com.user.Stabar;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A1B2C3D4E5F6AC9 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUNDLE_IDENTIFIER = com.user.Stabar;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1A1B2C3D4E5F6ACD = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1B2C3D4E5F6ACE;
+			buildPhases = (
+				1A1B2C3D4E5F6ACF,
+				1A1B2C3D4E5F6AD0,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A1B2C3D4E5F6AD1,
+			);
+			name = StaBarTests;
+			productName = StaBarTests;
+			productReference = 1A1B2C3D4E5F6AD2;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A1B2C3D4E5F6ACE = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6AD3,
+				1A1B2C3D4E5F6AD4,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1B2C3D4E5F6ACF = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6AD5,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1B2C3D4E5F6AD0 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1B2C3D4E5F6AD1 = {
+			isa = PBXTargetDependency;
+			target = 1A1B2C3D4E5F6AC2;
+			targetProxy = 1A1B2C3D4E5F6AD6;
+		};
+		1A1B2C3D4E5F6AD2 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = StaBarTests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1A1B2C3D4E5F6AD3 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_IDENTIFIER = com.user.StabarTests;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A1B2C3D4E5F6AD4 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_IDENTIFIER = com.user.StabarTests;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A1B2C3D4E5F6AD5 = {
+			isa = PBXBuildFile;
+			fileRef = 1A1B2C3D4E5F6AC0;
+		};
+		1A1B2C3D4E5F6AD6 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1B2C3D4E5F6AD7;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1B2C3D4E5F6AC2;
+			remoteInfo = StaBar;
+		};
+		1A1B2C3D4E5F6AD7 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1A1B2C3D4E5F6AC2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					1A1B2C3D4E5F6ACD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 1A1B2C3D4E5F6AC2;
+					};
+				};
+			};
+			buildConfigurationList = 1A1B2C3D4E5F6AD8;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A1B2C3D4E5F6AD9;
+			productRefGroup = 1A1B2C3D4E5F6ADA;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1B2C3D4E5F6AC2,
+				1A1B2C3D4E5F6ACD,
+			);
+		};
+		1A1B2C3D4E5F6AD8 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6ADB,
+				1A1B2C3D4E5F6ADC,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1B2C3D4E5F6AD9 = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6A7B,
+				1A1B2C3D4E5F6AC1,
+				1A1B2C3D4E5F6ADA,
+			);
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6ADA = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6AC7,
+				1A1B2C3D4E5F6AD2,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6ADB = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_DIALECT = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_DIALECT = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A1B2C3D4E5F6ADC = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_DIALECT = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_DIALECT = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1A1B2C3D4E5F6ACA = {
+			isa = PBXBuildFile;
+			fileRef = 1A1B2C3D4E5F6A8C;
+		};
+		1A1B2C3D4E5F6ACB = {
+			isa = PBXBuildFile;
+			fileRef = 1A1B2C3D4E5F6A9D;
+		};
+		1A1B2C3D4E5F6ACC = {
+			isa = PBXBuildFile;
+			fileRef = 1A1B2C3D4E5F6AAE;
+		};
+	};
+	rootObject = 1A1B2C3D4E5F6AD7;
+}
