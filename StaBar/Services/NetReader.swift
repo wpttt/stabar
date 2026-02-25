@@ -3,8 +3,8 @@ import Darwin
 
 /// Network throughput reader using BSD network APIs
 /// Tracks upload/download bytes per second across all active interfaces (excluding loopback)
-final class NetReader: MetricReader {
-    typealias Output = NetworkMetric
+public final class NetReader: MetricReader {
+    public typealias Output = NetworkMetric
     
     // MARK: - Previous State
     private var previousUpload: UInt64 = 0
@@ -12,7 +12,7 @@ final class NetReader: MetricReader {
     private var previousTimestamp: Date?
     
     // MARK: - Read Method
-    func read() throws -> NetworkMetric {
+    public func read() throws -> NetworkMetric {
         var ifaddr: UnsafeMutablePointer<ifaddrs>?
         guard getifaddrs(&ifaddr) == 0 else {
             throw MetricError.readFailed("getifaddrs() failed")

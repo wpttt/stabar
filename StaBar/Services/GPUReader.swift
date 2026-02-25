@@ -3,11 +3,11 @@ import IOKit
 
 /// Reads GPU usage metrics via IOAccelerator
 /// Returns nil if GPU stats are unavailable (graceful degradation)
-final class GPUReader {
+public final class GPUReader {
     
     /// Reads GPU utilization percentage
     /// - Returns: GPU usage as percentage (0.0-100.0) or nil if unavailable
-    func read() -> Double? {
+    public func read() -> Double? {
         var iterator: io_iterator_t = 0
         let matching = IOServiceMatching("IOAccelerator")
         

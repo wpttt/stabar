@@ -3,13 +3,13 @@ import Darwin
 
 // MARK: - RAM Reader
 /// Reads RAM usage metrics from system statistics
-class RAMReader: MetricReader {
-    typealias Output = Double
+public class RAMReader: MetricReader {
+    public typealias Output = Double
     
     /// Reads system RAM usage percentage
     /// - Returns: RAM usage as a percentage (0.0-100.0)
     /// - Throws: MetricError if unable to read RAM stats
-    func read() throws -> Double {
+    public func read() throws -> Double {
         var stats = vm_statistics64()
         var count = UInt32(MemoryLayout<vm_statistics64_data_t>.size / MemoryLayout<integer_t>.size)
         

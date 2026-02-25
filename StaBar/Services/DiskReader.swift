@@ -3,13 +3,13 @@ import Darwin
 
 // MARK: - Disk Reader
 /// Reads disk usage metrics for the boot volume
-class DiskReader: MetricReader {
-    typealias Output = Double
+public class DiskReader: MetricReader {
+    public typealias Output = Double
     
     /// Reads boot volume disk usage percentage
     /// - Returns: Disk usage as a percentage (0.0-100.0)
     /// - Throws: MetricError if unable to read disk stats
-    func read() throws -> Double {
+    public func read() throws -> Double {
         var stats = statfs()
         
         // Get filesystem stats for root (boot volume)

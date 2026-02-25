@@ -20,7 +20,7 @@ struct MetricValue {
 
 // MARK: - Network Metric
 /// Network specific metric with upload AND download speeds
-struct NetworkMetric {
+public struct NetworkMetric {
     let upload: Double     // bytes per second
     let download: Double   // bytes per second
     let timestamp: Date
@@ -28,7 +28,7 @@ struct NetworkMetric {
 
 // MARK: - Metric Error
 /// Errors that can occur during metric collection
-enum MetricError: Error {
+public enum MetricError: Error {
     case notAvailable
     case readFailed(String)
     case permissionDenied
@@ -36,7 +36,7 @@ enum MetricError: Error {
 
 // MARK: - Metric Reader Protocol
 /// Protocol for metric readers
-protocol MetricReader {
+public protocol MetricReader {
     associatedtype Output
     func read() throws -> Output
 }

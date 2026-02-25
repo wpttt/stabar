@@ -5,15 +5,15 @@ import Darwin
 /// Reads CPU usage using host_statistics (HOST_CPU_LOAD_INFO)
 /// Note: host_statistics() returns a pointer to a static structure, NOT dynamically allocated.
 /// Therefore, vm_deallocate is NOT needed (unlike host_processor_info which DOES require it).
-final class CPUReader: MetricReader {
-    typealias Output = Double
+public final class CPUReader: MetricReader {
+    public typealias Output = Double
     
     /// Previous CPU tick counts for delta calculation
     private var previousTicks: (user: UInt32, system: UInt32, idle: UInt32, nice: UInt32)?
     
     /// Read current CPU usage percentage (0.0-100.0)
     /// Returns delta-based usage since last read. First call returns 0.0.
-    func read() throws -> Double {
+    public func read() throws -> Double {
         var cpuLoadInfo = host_cpu_load_info()
         var count = mach_msg_type_number_t(MemoryLayout<host_cpu_load_info_data_t>.stride / MemoryLayout<integer_t>.stride)
         
