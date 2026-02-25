@@ -36,7 +36,8 @@ final class PreferencesStore {
     }
     
     var launchAtLogin: Bool {
-        didSet { defaults.set(launchAtLogin, forKey: "launchAtLogin") }
+        get { LaunchAtLogin.isEnabled }
+        set { LaunchAtLogin.setEnabled(newValue) }
     }
     
     init() {

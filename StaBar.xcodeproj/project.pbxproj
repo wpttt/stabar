@@ -53,6 +53,7 @@
 			2A2B3C4D5E6F7006,
 			2A2B3C4D5E6F7007,
 			2A2B3C4D5E6F7008,
+			2A2B3C4D5E6F7010,
 		);
 		path = Services;
 		sourceTree = "<group>";
@@ -91,6 +92,12 @@
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.swift;
 		path = GPUReader.swift;
+		sourceTree = "<group>";
+	};
+	2A2B3C4D5E6F7010 = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = LaunchAtLogin.swift;
 		sourceTree = "<group>";
 	};
 		1A1B2C3D4E5F6AAE = {
@@ -183,6 +190,7 @@
 				2A2B3C4D5E6F700D,
 				2A2B3C4D5E6F700E,
 				2A2B3C4D5E6F700F,
+			2A2B3C4D5E6F7011,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +581,10 @@
 	2A2B3C4D5E6F700F = {
 		isa = PBXBuildFile;
 		fileRef = 2A2B3C4D5E6F7008;
+	};
+	2A2B3C4D5E6F7011 = {
+		isa = PBXBuildFile;
+		fileRef = 2A2B3C4D5E6F7010;
 	};
 	};
 	rootObject = 1A1B2C3D4E5F6AD7;
