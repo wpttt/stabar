@@ -2,9 +2,18 @@ import SwiftUI
 
 @main
 struct StaBarApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("StaBar", systemImage: "chart.bar.fill") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
+    }
+}
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidFinishLaunching(_ notification: Notification) {
+        NSApp.setActivationPolicy(.accessory)
     }
 }
