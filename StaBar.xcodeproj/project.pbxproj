@@ -187,10 +187,17 @@
 			path = StaBarTests.swift;
 			sourceTree = "<group>";
 		};
+		3A3B4C5D6E7F8000 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = MetricsServiceTests.swift;
+			sourceTree = "<group>";
+		};
 		1A1B2C3D4E5F6AC1 = {
 			isa = PBXGroup;
 			children = (
 				1A1B2C3D4E5F6AC0,
+				3A3B4C5D6E7F8000,
 			);
 			path = StaBarTests;
 			sourceTree = "<group>";
@@ -343,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A1B2C3D4E5F6AD5,
+				3A3B4C5D6E7F8001,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +387,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
 			};
 			name = Debug;
 		};
@@ -397,13 +407,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
 			};
 			name = Release;
 		};
 		1A1B2C3D4E5F6AD5 = {
 			isa = PBXBuildFile;
 			fileRef = 1A1B2C3D4E5F6AC0;
+		};
+		3A3B4C5D6E7F8001 = {
+			isa = PBXBuildFile;
+			fileRef = 3A3B4C5D6E7F8000;
 		};
 		1A1B2C3D4E5F6AD6 = {
 			isa = PBXContainerItemProxy;
