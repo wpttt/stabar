@@ -4,7 +4,8 @@
 
 A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 
-![StaBar Icon](icon.svg)
+![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)
+![screen shot](images/figure.png)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
 ![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-orange)
@@ -85,33 +86,17 @@ The DMG creation script automatically:
 
 ## Screenshots
 
-<!-- TODO: Add screenshots after v1.0 release -->
+### Menu Bar Display
+StaBar shows system metrics directly in the menu bar with a clean, multi-column layout:
 
-*Screenshots will be added after the v1.0 release.*
+![Menu Bar](screenshots/screenshot_menubar.png)
 
-## Architecture
+### Settings Popover
+Click the menu bar icon to open the settings popover:
 
-```
-StaBar/
-├── StaBarApp.swift              # App entry point, NSStatusItem setup
-├── ContentView.swift            # Root content view
-├── PreferencesStore.swift       # UserDefaults-backed settings store
-├── Services/
-│   ├── MetricsService.swift     # Metric reader protocol definition
-│   ├── CPUReader.swift          # CPU usage via host_statistics64
-│   ├── GPUReader.swift          # GPU usage via IOAccelerator
-│   ├── RAMReader.swift          # RAM usage via vm_statistics64
-│   ├── DiskReader.swift         # Disk usage via statfs
-│   ├── NetReader.swift          # Network throughput via getifaddrs
-│   └── LaunchAtLogin.swift      # Login item via SMAppService
-├── Views/
-│   ├── MenuBarView.swift        # Main popover container
-│   ├── StatusBarContentView.swift  # Menu bar multi-column layout
-│   ├── MetricColumn.swift       # Single metric column (label + value)
-│   └── SettingsView.swift       # Settings UI with toggles and pickers
-└── ViewModels/
-    └── MetricsViewModel.swift   # @Observable model binding metrics to UI
-```
+![Settings](screenshots/screenshot_settings.png)
+
+*Screenshots feature rounded corners and macOS-style shadows for a polished look.*
 
 ## Known Limitations
 

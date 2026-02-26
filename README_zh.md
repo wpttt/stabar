@@ -4,7 +4,8 @@
 
 一款基于 Swift 和 SwiftUI 构建的轻量级原生 macOS 菜单栏系统监控工具。
 
-![StaBar Icon](icon.svg)
+![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
+![screen shot](images/figure.png)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
 ![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-orange)
@@ -83,35 +84,21 @@ DMG 创建脚本会自动完成：
 4. **自定义配置** — 切换显示哪些指标、设置刷新间隔、选择网络速度单位
 5. **开机自启** — 启用"登录时启动"，让 StaBar 随系统登录自动运行
 
-## 截图展示
+## 界面截图
 
-<!-- TODO: 待 v1.0 发布后添加截图 -->
+### 菜单栏显示
+StaBar 在菜单栏以清爽的多列布局直接展示系统指标：
 
-*v1.0 正式发布后将添加截图。*
+![菜单栏](screenshots/screenshot_menubar.png)
 
-## 项目架构
+### 设置弹窗
+点击菜单栏图标打开设置面板：
 
-```
-StaBar/
-├── StaBarApp.swift              # 应用入口，NSStatusItem 设置
-├── ContentView.swift            # 根内容视图
-├── PreferencesStore.swift       # UserDefaults 存储设置
-├── Services/
-│   ├── MetricsService.swift     # 指标读取协议定义
-│   ├── CPUReader.swift          # 通过 host_statistics64 读取 CPU
-│   ├── GPUReader.swift          # 通过 IOAccelerator 读取 GPU
-│   ├── RAMReader.swift          # 通过 vm_statistics64 读取内存
-│   ├── DiskReader.swift         # 通过 statfs 读取磁盘
-│   ├── NetReader.swift          # 通过 getifaddrs 读取网络
-│   └── LaunchAtLogin.swift      # 通过 SMAppService 实现登录启动
-├── Views/
-│   ├── MenuBarView.swift        # 主弹窗容器
-│   ├── StatusBarContentView.swift  # 菜单栏多列布局
-│   ├── MetricColumn.swift       # 单个指标列（名称+数值）
-│   └── SettingsView.swift       # 设置界面（开关、选择器）
-└── ViewModels/
-    └── MetricsViewModel.swift   # @Observable 模型，绑定指标到 UI
-```
+![设置面板](screenshots/screenshot_settings.png)
+
+*截图采用圆角设计，配合 macOS 风格的阴影，呈现精致的视觉效果。*
+
+## 已知限制
 
 ## 已知限制
 
