@@ -36,8 +36,8 @@ final class MetricsViewModel {
             bottomParts.append("\(Int(diskUsage))%")
         }
         if prefs.showNet {
-            let upStr = formatMenuBarSpeed(netUpload, unit: prefs.netUnit)
-            let downStr = formatMenuBarSpeed(netDownload, unit: prefs.netUnit)
+            let upStr = formatSpeed(netUpload, unit: prefs.netUnit)
+            let downStr = formatSpeed(netDownload, unit: prefs.netUnit)
             topParts.append("↑\(upStr)")
             bottomParts.append("↓\(downStr)")
         }
@@ -49,7 +49,7 @@ final class MetricsViewModel {
         return "\(top)\n\(bottom)"
     }
 
-    private func formatMenuBarSpeed(_ bytesPerSec: Double, unit: String) -> String {
+    func formatSpeed(_ bytesPerSec: Double, unit: String) -> String {
         let value: Double
         if unit == "Kbps" {
             value = bytesPerSec * 8 / 1_000

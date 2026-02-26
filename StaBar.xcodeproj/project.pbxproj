@@ -108,6 +108,7 @@
 			2A2B3C4D5E6F7013,
 			2A2B3C4D5E6F7015,
 			2A2B3C4D5E6F7017,
+			2A2B3C4D5E6F701C,
 		);
 		path = Views;
 		sourceTree = "<group>";
@@ -128,6 +129,12 @@
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.swift;
 		path = CompactStatusView.swift;
+		sourceTree = "<group>";
+	};
+	2A2B3C4D5E6F701C = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.swift;
+		path = StatusBarContentView.swift;
 		sourceTree = "<group>";
 	};
 	2A2B3C4D5E6F7019 = {
@@ -246,6 +253,7 @@
 			2A2B3C4D5E6F7016,
 			2A2B3C4D5E6F7018,
 				2A2B3C4D5E6F701B,
+				2A2B3C4D5E6F701D,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +673,10 @@
 	2A2B3C4D5E6F701B = {
 		isa = PBXBuildFile;
 		fileRef = 2A2B3C4D5E6F701A;
+	};
+	2A2B3C4D5E6F701D = {
+		isa = PBXBuildFile;
+		fileRef = 2A2B3C4D5E6F701C;
 	};
 	};
 	rootObject = 1A1B2C3D4E5F6AD7;
