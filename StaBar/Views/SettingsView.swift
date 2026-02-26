@@ -29,7 +29,7 @@ struct SettingsView: View {
             Section("Network Unit") {
                 Picker("Unit", selection: $preferences.netUnit) {
                     Text("Mbps").tag("Mbps")
-                    Text("MB/s").tag("MB/s")
+                    Text("Kbps").tag("Kbps")
                 }
                 .pickerStyle(.segmented)
             }

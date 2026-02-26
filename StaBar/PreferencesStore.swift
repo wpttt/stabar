@@ -47,7 +47,8 @@ final class PreferencesStore {
         self.showDisk = defaults.bool(forKey: "showDisk", default: true)
         self.showNet = defaults.bool(forKey: "showNet", default: true)
         self.refreshInterval = defaults.double(forKey: "refreshInterval", default: 2.0)
-        self.netUnit = defaults.string(forKey: "netUnit") ?? "Mbps"
+        let savedUnit = defaults.string(forKey: "netUnit") ?? "Mbps"
+        self.netUnit = (savedUnit == "MB/s") ? "Mbps" : savedUnit
         self.launchAtLogin = defaults.bool(forKey: "launchAtLogin", default: false)
     }
     

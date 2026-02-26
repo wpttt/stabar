@@ -16,39 +16,57 @@ final class MetricsViewModel {
 
     var menuBarText: String {
         let prefs = PreferencesStore.shared
-        var parts: [String] = []
+        var topParts: [String] = []
+        var bottomParts: [String] = []
 
         if prefs.showCPU {
-            parts.append("C \(Int(cpuUsage))%")
+            topParts.append("cpu")
+            bottomParts.append("\(Int(cpuUsage))%")
         }
         if prefs.showGPU, let gpu = gpuUsage {
-            parts.append("G \(Int(gpu))%")
+            topParts.append("gpu")
+            bottomParts.append("\(Int(gpu))%")
         }
         if prefs.showRAM {
-            parts.append("R \(Int(ramUsage))%")
+            topParts.append("ram")
+            bottomParts.append("\(Int(ramUsage))%")
         }
         if prefs.showDisk {
-            parts.append("D \(Int(diskUsage))%")
+            topParts.append("dsk")
+            bottomParts.append("\(Int(diskUsage))%")
         }
         if prefs.showNet {
             let upStr = formatMenuBarSpeed(netUpload, unit: prefs.netUnit)
             let downStr = formatMenuBarSpeed(netDownload, unit: prefs.netUnit)
-            parts.append("↑\(upStr)↓\(downStr)")
+            topParts.append("↑\(upStr)")
+            bottomParts.append("↓\(downStr)")
         }
 
-        return parts.isEmpty ? "StaBar" : parts.joined(separator: "  ")
+        if topParts.isEmpty { return "StaBar" }
+
+        let top = topParts.joined(separator: "  ")
+        let bottom = bottomParts.joined(separator: "  ")
+        return "\(top)\n\(bottom)"
     }
 
     private func formatMenuBarSpeed(_ bytesPerSec: Double, unit: String) -> String {
         let value: Double
-        if unit == "MB/s" {
-            value = bytesPerSec / 1_048_576
+        if unit == "Kbps" {
+            value = bytesPerSec * 8 / 1_000
         } else {
-            value = bytesPerSec / 125_000
+            // Default: Mbps
+            value = bytesPerSec * 8 / 1_000_000
         }
-        if value < 0.1 { return "—" }
-        if value < 10 { return String(format: "%.1f", value) }
-        return String(format: "%.0f", value)
+
+        if unit == "Kbps" {
+            if value < 1 { return "—" }
+            if value < 1000 { return String(format: "%.0f", value) }
+            return "999+"
+        } else {
+            if value < 0.1 { return "—" }
+            if value < 10 { return String(format: "%.1f", value) }
+            return String(format: "%.0f", value)
+        }
     }
 
     // MARK: - Private Properties

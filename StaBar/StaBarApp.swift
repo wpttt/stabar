@@ -10,6 +10,7 @@ struct StaBarApp: App {
             MenuBarView()
         } label: {
             Text(viewModel.menuBarText)
+                .font(.system(size: 9, weight: .medium, design: .monospaced))
         }
         .menuBarExtraStyle(.window)
     }
