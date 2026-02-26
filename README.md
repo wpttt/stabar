@@ -6,7 +6,7 @@ A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 
 <p align="center">
   <img src="images/icon.svg" width="128" height="128" alt="screen shot"><br>
-  <img src="images/figure.png" width="827" height="590" alt="screen shot"><br>
+  <img src="images/figure.png" width="414" height="295" alt="screen shot"><br>
   <img src="https://img.shields.io/badge/macOS-14%2B-blue">
   <img src="https://img.shields.io/badge/Swift-5.9%2B-orange">
   <img src="https://img.shields.io/badge/License-MIT-green">

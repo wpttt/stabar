@@ -6,14 +6,11 @@
 
 <p align="center">
   <img src="images/icon.svg" width="128" height="128" alt="screen shot"><br>
-  <img src="images/figure.png" width="1241" height="885" alt="screen shot">
+  <img src="images/figure.png" width="414" height="295" alt="screen shot"><br>
+  <img src="https://img.shields.io/badge/macOS-14%2B-blue">
+  <img src="https://img.shields.io/badge/Swift-5.9%2B-orange">
+  <img src="https://img.shields.io/badge/License-MIT-green">
 </p>
-<!-- ![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
-![screen shot](images/figure.png)
-![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
-![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-orange)
-![License MIT](https://img.shields.io/badge/License-MIT-green) -->
-
 
 
 ## 功能特性
