@@ -2,10 +2,11 @@
 
 **[English](README.md) | [中文](README_zh.md)**
 
-<center>
 A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 
+<center>
 ![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
+
 ![screen shot](images/figure.png)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
