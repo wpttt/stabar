@@ -1,6 +1,10 @@
 # StaBar
 
+**[English](README.md) | [中文](README_zh.md)**
+
 A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
+
+![StaBar Icon](icon.svg)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
 ![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-orange)
@@ -9,14 +13,15 @@ A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 ## Features
 
 - **Real-time monitoring** — CPU, GPU, RAM, Disk, and Network metrics at a glance
-- **Compact display** — All metrics shown directly in the menu bar: `C 42% G 15% R 68% D 95% ↑1.2 ↓3.4`
+- **Column layout display** — Each metric displayed in its own column with label on top and value on bottom for perfect alignment
 - **Settings popover** — Click the menu bar icon to configure preferences
 - **Toggle metrics** — Show or hide individual metrics (CPU, GPU, RAM, Disk, Network)
 - **Refresh interval** — Choose from 1s, 2s, 5s, or 10s update intervals
-- **Network units** — Select auto, KB/s, or MB/s for network speed display
+- **Network units** — Select Kbps or Mbps for network speed display
 - **Launch at Login** — Automatic startup via SMAppService
 - **Native performance** — Pure Swift/SwiftUI with minimal resource footprint
 - **macOS design** — UI consistent with macOS Tahoe aesthetics
+- **Custom app icon** — Beautiful modern icon designed specifically for StaBar
 
 ## System Requirements
 
@@ -38,7 +43,7 @@ A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 Requires **Xcode 15+** with the macOS 14 SDK.
 
 ```bash
-git clone https://github.com/user/stabar.git
+git clone https://github.com/wpttt/stabar.git
 cd stabar
 
 # Build Release configuration
@@ -64,10 +69,16 @@ To create a DMG for distribution:
 ./scripts/create-dmg.sh
 ```
 
+The DMG creation script automatically:
+- Compiles the app
+- Generates the app icon in all required sizes
+- Applies the custom icon to the DMG file itself
+- Sets the volume icon for the mounted DMG
+
 ## Usage
 
 1. **Launch** — StaBar runs in the menu bar with no main window
-2. **View metrics** — System metrics appear directly in the menu bar text
+2. **View metrics** — System metrics appear in the menu bar as independent columns
 3. **Open settings** — Click the menu bar icon to open the settings popover
 4. **Configure** — Toggle which metrics to display, set the refresh interval, and choose network speed units
 5. **Auto-start** — Enable "Launch at Login" to start StaBar automatically on login
@@ -82,7 +93,7 @@ To create a DMG for distribution:
 
 ```
 StaBar/
-├── StaBarApp.swift              # App entry point, MenuBarExtra setup
+├── StaBarApp.swift              # App entry point, NSStatusItem setup
 ├── ContentView.swift            # Root content view
 ├── PreferencesStore.swift       # UserDefaults-backed settings store
 ├── Services/
@@ -95,7 +106,8 @@ StaBar/
 │   └── LaunchAtLogin.swift      # Login item via SMAppService
 ├── Views/
 │   ├── MenuBarView.swift        # Main popover container
-│   ├── CompactStatusView.swift  # Menu bar compact text formatter
+│   ├── StatusBarContentView.swift  # Menu bar multi-column layout
+│   ├── MetricColumn.swift       # Single metric column (label + value)
 │   └── SettingsView.swift       # Settings UI with toggles and pickers
 └── ViewModels/
     └── MetricsViewModel.swift   # @Observable model binding metrics to UI
@@ -105,7 +117,7 @@ StaBar/
 
 1. **GPU monitoring** uses the IOAccelerator private API, which may not be available on all systems. StaBar gracefully falls back to 0% if unavailable.
 2. **Not code-signed** — Users must manually trust the app in System Settings on first launch.
-3. **macOS 14+ only** — StaBar uses the `MenuBarExtra` API introduced in macOS 14.
+3. **macOS 14+ only** — StaBar uses modern SwiftUI features introduced in macOS 14.
 
 ## License
 
