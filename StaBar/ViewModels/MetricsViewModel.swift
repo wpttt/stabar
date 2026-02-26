@@ -13,7 +13,44 @@ final class MetricsViewModel {
     var diskUsage: Double = 0
     var netUpload: Double = 0
     var netDownload: Double = 0
-    
+
+    var menuBarText: String {
+        let prefs = PreferencesStore.shared
+        var parts: [String] = []
+
+        if prefs.showCPU {
+            parts.append("C \(Int(cpuUsage))%")
+        }
+        if prefs.showGPU, let gpu = gpuUsage {
+            parts.append("G \(Int(gpu))%")
+        }
+        if prefs.showRAM {
+            parts.append("R \(Int(ramUsage))%")
+        }
+        if prefs.showDisk {
+            parts.append("D \(Int(diskUsage))%")
+        }
+        if prefs.showNet {
+            let upStr = formatMenuBarSpeed(netUpload, unit: prefs.netUnit)
+            let downStr = formatMenuBarSpeed(netDownload, unit: prefs.netUnit)
+            parts.append("↑\(upStr)↓\(downStr)")
+        }
+
+        return parts.isEmpty ? "StaBar" : parts.joined(separator: "  ")
+    }
+
+    private func formatMenuBarSpeed(_ bytesPerSec: Double, unit: String) -> String {
+        let value: Double
+        if unit == "MB/s" {
+            value = bytesPerSec / 1_048_576
+        } else {
+            value = bytesPerSec / 125_000
+        }
+        if value < 0.1 { return "—" }
+        if value < 10 { return String(format: "%.1f", value) }
+        return String(format: "%.0f", value)
+    }
+
     // MARK: - Private Properties
     private let cpuReader = CPUReader()
     private let gpuReader = GPUReader()
