@@ -152,11 +152,8 @@
 		sourceTree = "<group>";
 	};
 		1A1B2C3D4E5F6AAE = {
-			isa = PBXGroup;
-			children = (
-				1A1B2C3D4E5F6AAF,
-				1A1B2C3D4E5F6AB0,
-			);
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
 			path = Assets.xcassets;
 			sourceTree = "<group>";
 		};
