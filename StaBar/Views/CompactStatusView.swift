@@ -54,22 +54,24 @@ private struct MetricLabel: View {
     }
 }
 
-/// Network throughput label (e.g., "↑1.2 ↓3.4")
+/// Network throughput label with vertical layout (saves horizontal space)
 private struct NetworkLabel: View {
     let upload: Double
     let download: Double
     
     var body: some View {
-        HStack(spacing: 4) {
+        VStack(alignment: .trailing, spacing: 0) {
             HStack(spacing: 1) {
                 Image(systemName: "arrow.up")
-                    .font(.system(size: 10, weight: .semibold))
+                    .font(.system(size: 9, weight: .semibold))
                 Text(formatSpeed(upload))
+                    .font(.system(size: 10, weight: .medium, design: .monospaced))
             }
             HStack(spacing: 1) {
                 Image(systemName: "arrow.down")
-                    .font(.system(size: 10, weight: .semibold))
+                    .font(.system(size: 9, weight: .semibold))
                 Text(formatSpeed(download))
+                    .font(.system(size: 10, weight: .medium, design: .monospaced))
             }
         }
         .foregroundStyle(.secondary)
@@ -85,7 +87,6 @@ private struct NetworkLabel: View {
             return String(format: "%.0f", mbps)
         }
     }
-}
 
 #Preview {
     CompactStatusView(
@@ -98,4 +99,5 @@ private struct NetworkLabel: View {
         netDownload: 425000
     )
     .padding()
+}
 }
