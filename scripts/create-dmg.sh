@@ -9,6 +9,8 @@ BUILD_DIR="./build"
 RELEASE_DIR="${BUILD_DIR}/Release"
 APP_PATH="${RELEASE_DIR}/${APP_NAME}.app"
 STAGING_DIR="${BUILD_DIR}/dmg-staging"
+ICONSET_DIR="${BUILD_DIR}/AppIcon.iconset"
+ICNS_PATH="${BUILD_DIR}/AppIcon.icns"
 
 # Colors for output
 RED='\033[0;31m'
@@ -43,6 +45,13 @@ if [ ! -d "$APP_PATH" ]; then
     exit 1
 fi
 
+log_info "Generating .icns file from AppIcon.appiconset..."
+rm -rf "$ICONSET_DIR"
+cp -r "StaBar/Assets.xcassets/AppIcon.appiconset" "$ICONSET_DIR"
+rm -f "$ICONSET_DIR/Contents.json"
+iconutil -c icns "$ICONSET_DIR" -o "$ICNS_PATH"
+rm -rf "$ICONSET_DIR"
+
 log_info "Creating DMG staging directory..."
 rm -rf "$STAGING_DIR"
 mkdir -p "$STAGING_DIR"
@@ -53,7 +62,13 @@ cp -r "$APP_PATH" "$STAGING_DIR/"
 log_info "Creating Applications symlink..."
 ln -s /Applications "$STAGING_DIR/Applications"
 
+log_info "Setting DMG volume icon..."
+cp "$ICNS_PATH" "$STAGING_DIR/.VolumeIcon.icns"
+SetFile -c icnC "$STAGING_DIR/.VolumeIcon.icns"
+SetFile -a C "$STAGING_DIR"
+
 log_info "Creating DMG with hdiutil..."
+rm -f "$DMG_NAME"
 hdiutil create -volname "$APP_NAME" -srcfolder "$STAGING_DIR" -ov -format UDZO "$DMG_NAME"
 
 if [ ! -f "$DMG_NAME" ]; then
@@ -61,8 +76,20 @@ if [ ! -f "$DMG_NAME" ]; then
     exit 1
 fi
 
+log_info "Setting icon for the DMG file itself..."
+cat << 'EOF' > "${BUILD_DIR}/set_icon.swift"
+import Cocoa
+let args = CommandLine.arguments
+if args.count != 3 { exit(1) }
+guard let image = NSImage(contentsOfFile: args[1]) else { exit(1) }
+let success = NSWorkspace.shared.setIcon(image, forFile: args[2], options: [])
+if !success { exit(1) }
+EOF
+swift "${BUILD_DIR}/set_icon.swift" "$ICNS_PATH" "$DMG_NAME"
+
 log_info "Cleaning up staging directory..."
 rm -rf "$STAGING_DIR"
+rm -f "${BUILD_DIR}/set_icon.swift"
 
 # Get DMG file size
 DMG_SIZE=$(ls -lh "$DMG_NAME" | awk '{print $5}')
