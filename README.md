@@ -2,7 +2,7 @@
 
 **[English](README.md) | [中文](README_zh.md)**
 
-A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
+一款基于 Swift 和 SwiftUI 构建的轻量级原生 macOS 菜单栏系统监控工具。
 
 <p align="center">
   <img src="images/icon.svg" width="128" height="128" alt="screen shot"><br>
@@ -12,90 +12,92 @@ A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
   <img src="https://img.shields.io/badge/License-MIT-green">
 </p>
 
-## Features
 
-- **Real-time monitoring** — CPU, GPU, RAM, Disk, and Network metrics at a glance
-- **Column layout display** — Each metric displayed in its own column with label on top and value on bottom for perfect alignment
-- **Settings popover** — Click the menu bar icon to configure preferences
-- **Toggle metrics** — Show or hide individual metrics (CPU, GPU, RAM, Disk, Network)
-- **Refresh interval** — Choose from 1s, 2s, 5s, or 10s update intervals
-- **Network units** — Select Kbps or Mbps for network speed display
-- **Launch at Login** — Automatic startup via SMAppService
-- **Native performance** — Pure Swift/SwiftUI with minimal resource footprint
-- **macOS design** — UI consistent with macOS Tahoe aesthetics
-- **Custom app icon** — Beautiful modern icon designed specifically for StaBar
+## 功能特性
 
-## System Requirements
+- **实时监控** — 一目了然地查看 CPU、GPU、内存、磁盘和网络指标
+- **列式布局** — 每个指标独立成列，名称在上、数值在下，完美对齐
+- **设置弹窗** — 点击菜单栏图标即可打开设置面板
+- **指标开关** — 可单独显示或隐藏 CPU、GPU、内存、磁盘、网络任一指标
+- **刷新间隔** — 支持 1秒、2秒、5秒、10秒 四种刷新频率
+- **网络单位** — 网络速度可选择显示 Kbps 或 Mbps
+- **开机自启** — 通过 SMAppService 实现自动启动
+- **原生性能** — 纯 Swift/SwiftUI 开发，资源占用极低
+- **macOS 设计** — UI 风格与 macOS Tahoe 设计语言一致
 
-- **macOS 14 Sonoma** or later
-- Apple Silicon (M1/M2/M3) recommended; Intel Macs supported
+## 系统要求
 
-## Installation
+- **macOS 14 Sonoma** 或更高版本
+- 推荐 Apple Silicon (M1/M2/M3)；Intel Mac 待测试
 
-1. Download `StaBar-1.0.0.dmg` from [GitHub Releases](../../releases)
-2. Open the DMG and drag **StaBar.app** to your **Applications** folder
-3. Launch StaBar from Applications
+## 安装方法
 
-> **Note:** StaBar is not code-signed or notarized. On first launch, macOS may block the app. To allow it:
+1. 从 [GitHub Releases](../../releases) 下载 `StaBar-1.0.0.dmg`
+2. 打开 DMG 文件，将 **StaBar.app** 拖拽到 **应用程序** 文件夹
+3. 从应用程序启动 StaBar
+
+> **注意：** StaBar 未进行代码签名或公证。首次启动时，macOS 可能会阻止运行。请按以下步骤允许：
 >
-> **System Settings → Privacy & Security → scroll down → click "Open Anyway"**
+> **系统设置 → 隐私与安全性 → 向下滚动 → 点击"仍要打开"**
 
-## Building from Source
+## 从源码构建
 
-Requires **Xcode 15+** with the macOS 14 SDK.
+需要 **Xcode 15+** 及 macOS 14 SDK。
 
 ```bash
 git clone https://github.com/wpttt/stabar.git
 cd stabar
 
-# Build Release configuration
+# 构建 Release 版本
 /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild \
   -scheme StaBar \
   -configuration Release \
   SYMROOT=./build build
 
-# Launch the app
+# 启动应用
 open build/Release/StaBar.app
 ```
 
-To run unit tests:
+运行单元测试：
 
 ```bash
 /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild \
   test -scheme StaBar -destination 'platform=macOS'
 ```
 
-To create a DMG for distribution:
+创建 DMG 安装包：
 
 ```bash
 ./scripts/create-dmg.sh
 ```
 
-The DMG creation script automatically:
-- Compiles the app
-- Generates the app icon in all required sizes
-- Applies the custom icon to the DMG file itself
-- Sets the volume icon for the mounted DMG
+DMG 创建脚本会自动完成：
+- 编译应用
+- 生成所有尺寸的应用图标
+- 将自定义图标应用到 DMG 文件本身
+- 设置挂载后 DMG 的卷标图标
 
-## Usage
+## 使用说明
 
-1. **Launch** — StaBar runs in the menu bar with no main window
-2. **View metrics** — System metrics appear in the menu bar as independent columns
-3. **Open settings** — Click the menu bar icon to open the settings popover
-4. **Configure** — Toggle which metrics to display, set the refresh interval, and choose network speed units
-5. **Auto-start** — Enable "Launch at Login" to start StaBar automatically on login
+1. **启动应用** — StaBar 仅在菜单栏运行，没有主窗口
+2. **查看指标** — 系统指标以独立列的形式显示在菜单栏
+3. **打开设置** — 点击菜单栏图标打开设置弹窗
+4. **自定义配置** — 切换显示哪些指标、设置刷新间隔、选择网络速度单位
+5. **开机自启** — 启用"登录时启动"，让 StaBar 随系统登录自动运行
 
-## Known Limitations
+## 已知限制
 
-1. **GPU monitoring** uses the IOAccelerator private API, which may not be available on all systems. StaBar gracefully falls back to 0% if unavailable.
-2. **Not code-signed** — Users must manually trust the app in System Settings on first launch.
-3. **macOS 14+ only** — StaBar uses modern SwiftUI features introduced in macOS 14.
+## 已知限制
 
-## License
+1. **GPU 监控** 使用 IOAccelerator 私有 API，可能在部分系统上不可用。如不可用，StaBar 会优雅地回退显示为 0%。
+2. **未代码签名** — 用户首次启动时需在系统设置中手动信任应用。
+3. **仅支持 macOS 14+** — StaBar 使用了 macOS 14 引入的现代 SwiftUI 特性。
 
-This project is licensed under the [MIT License](LICENSE).
+## 许可证
 
-## Acknowledgments
+本项目采用 [MIT License](LICENSE) 许可证。
 
-- Inspired by [Stats](https://github.com/exelban/stats) by exelban — the most comprehensive macOS system monitor
-- [Rectangle](https://github.com/rxhanson/Rectangle) by rxhanson — for menu bar and login item patterns
+## 致谢
+
+- 灵感来源于 exelban 的 [Stats](https://github.com/exelban/stats) —— 最全面的 macOS 系统监控工具
+- rxhanson 的 [Rectangle](https://github.com/rxhanson/Rectangle) —— 菜单栏和登录项实现参考
