@@ -4,7 +4,7 @@
 
 A lightweight native macOS menu bar system monitor built with Swift and SwiftUI.
 
-![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_256x256.png)
+![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
 ![screen shot](images/figure.png)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
@@ -83,20 +83,6 @@ The DMG creation script automatically:
 3. **Open settings** — Click the menu bar icon to open the settings popover
 4. **Configure** — Toggle which metrics to display, set the refresh interval, and choose network speed units
 5. **Auto-start** — Enable "Launch at Login" to start StaBar automatically on login
-
-## Screenshots
-
-### Menu Bar Display
-StaBar shows system metrics directly in the menu bar with a clean, multi-column layout:
-
-![Menu Bar](screenshots/screenshot_menubar.png)
-
-### Settings Popover
-Click the menu bar icon to open the settings popover:
-
-![Settings](screenshots/screenshot_settings.png)
-
-*Screenshots feature rounded corners and macOS-style shadows for a polished look.*
 
 ## Known Limitations
 
