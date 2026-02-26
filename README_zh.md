@@ -3,13 +3,17 @@
 **[English](README.md) | [中文](README_zh.md)**
 
 一款基于 Swift 和 SwiftUI 构建的轻量级原生 macOS 菜单栏系统监控工具。
+
 <center>
+
 ![StaBar Icon](StaBar/Assets.xcassets/AppIcon.appiconset/icon_128x128.png)
+
 ![screen shot](images/figure.png)
 
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue)
 ![Swift 5.9+](https://img.shields.io/badge/Swift-5.9%2B-orange)
 ![License MIT](https://img.shields.io/badge/License-MIT-green)
+
 </center>
 
 ## 功能特性
