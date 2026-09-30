@@ -5,249 +5,178 @@
 	};
 	objectVersion = 56;
 	objects = {
-		1A1B2C3D4E5F6A7B = {
-			isa = PBXGroup;
-			children = (
-				1A1B2C3D4E5F6A7C,
-				1A1B2C3D4E5F6AC1,
-				1A1B2C3D4E5F6ADA,
+
+/* Begin PBXBuildFile section */
+		1A1B2C3D4E5F6ACA /* StaBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B2C3D4E5F6A8C /* StaBarApp.swift */; };
+		1A1B2C3D4E5F6ACB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B2C3D4E5F6A9D /* ContentView.swift */; };
+		1A1B2C3D4E5F6ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A1B2C3D4E5F6AAE /* Assets.xcassets */; };
+		1A1B2C3D4E5F6AD5 /* StaBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B2C3D4E5F6AC0 /* StaBarTests.swift */; };
+		2A2B3C4D5E6F7009 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7001 /* PreferencesStore.swift */; };
+		2A2B3C4D5E6F700A /* MetricsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7003 /* MetricsService.swift */; };
+		2A2B3C4D5E6F700B /* CPUReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7004 /* CPUReader.swift */; };
+		2A2B3C4D5E6F700C /* RAMReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7005 /* RAMReader.swift */; };
+		2A2B3C4D5E6F700D /* DiskReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7006 /* DiskReader.swift */; };
+		2A2B3C4D5E6F700E /* NetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7007 /* NetReader.swift */; };
+		2A2B3C4D5E6F700F /* GPUReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7008 /* GPUReader.swift */; };
+		2A2B3C4D5E6F7011 /* LaunchAtLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7010 /* LaunchAtLogin.swift */; };
+		2A2B3C4D5E6F7014 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7013 /* MenuBarView.swift */; };
+		2A2B3C4D5E6F7016 /* CompactStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7015 /* CompactStatusView.swift */; };
+		2A2B3C4D5E6F7018 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7017 /* SettingsView.swift */; };
+		2A2B3C4D5E6F701B /* MetricsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F701A /* MetricsViewModel.swift */; };
+		2A2B3C4D5E6F701D /* StatusBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F701C /* StatusBarContentView.swift */; };
+		2A2B3C4D5E6F7021 /* HoverDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7020 /* HoverDetailView.swift */; };
+		2A2B3C4D5E6F7023 /* MetricPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7022 /* MetricPalette.swift */; };
+		2A2B3C4D5E6F7025 /* PanelBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2B3C4D5E6F7024 /* PanelBackground.swift */; };
+		3A3B4C5D6E7F8001 /* MetricsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B4C5D6E7F8000 /* MetricsServiceTests.swift */; };
+		4A4B5C6D7E8F9001 /* HoverDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B5C6D7E8F9000 /* HoverDetailViewTests.swift */; };
+		4A4B5C6D7E8F9003 /* StatusBarContentViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4B5C6D7E8F9002 /* StatusBarContentViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A1B2C3D4E5F6AD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A1B2C3D4E5F6AD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1B2C3D4E5F6AC2;
+			remoteInfo = StaBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A1B2C3D4E5F6A8C /* StaBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaBarApp.swift; sourceTree = "<group>"; };
+		1A1B2C3D4E5F6A9D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A1B2C3D4E5F6AAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A1B2C3D4E5F6AC0 /* StaBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaBarTests.swift; sourceTree = "<group>"; };
+		1A1B2C3D4E5F6AC7 /* StaBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1B2C3D4E5F6AD2 /* StaBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A2B3C4D5E6F7001 /* PreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStore.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7003 /* MetricsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsService.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7004 /* CPUReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUReader.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7005 /* RAMReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RAMReader.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7006 /* DiskReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskReader.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7007 /* NetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetReader.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7008 /* GPUReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPUReader.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7010 /* LaunchAtLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLogin.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7013 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7015 /* CompactStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactStatusView.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7017 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F701A /* MetricsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsViewModel.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F701C /* StatusBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarContentView.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7020 /* HoverDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverDetailView.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7022 /* MetricPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricPalette.swift; sourceTree = "<group>"; };
+		2A2B3C4D5E6F7024 /* PanelBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelBackground.swift; sourceTree = "<group>"; };
+		3A3B4C5D6E7F8000 /* MetricsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsServiceTests.swift; sourceTree = "<group>"; };
+		4A4B5C6D7E8F9000 /* HoverDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverDetailViewTests.swift; sourceTree = "<group>"; };
+		4A4B5C6D7E8F9002 /* StatusBarContentViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarContentViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A1B2C3D4E5F6AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-	1A1B2C3D4E5F6A7C = {
-		isa = PBXGroup;
-		children = (
-			1A1B2C3D4E5F6A8C,
-			1A1B2C3D4E5F6A9D,
-			2A2B3C4D5E6F7001,
-			1A1B2C3D4E5F6AAE,
-			2A2B3C4D5E6F7002,
-			2A2B3C4D5E6F7012,
-			2A2B3C4D5E6F7019,
-		);
-		path = StaBar;
-		sourceTree = "<group>";
-	};
-		1A1B2C3D4E5F6A8C = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = StaBarApp.swift;
-			sourceTree = "<group>";
-		};
-		1A1B2C3D4E5F6A9D = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = ContentView.swift;
-			sourceTree = "<group>";
-		};
-	2A2B3C4D5E6F7001 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = PreferencesStore.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7002 = {
-		isa = PBXGroup;
-		children = (
-			2A2B3C4D5E6F7003,
-			2A2B3C4D5E6F7004,
-			2A2B3C4D5E6F7005,
-			2A2B3C4D5E6F7006,
-			2A2B3C4D5E6F7007,
-			2A2B3C4D5E6F7008,
-			2A2B3C4D5E6F7010,
-		);
-		path = Services;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7003 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = MetricsService.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7004 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = CPUReader.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7005 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = RAMReader.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7006 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = DiskReader.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7007 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = NetReader.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7008 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = GPUReader.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7010 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = LaunchAtLogin.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7012 = {
-		isa = PBXGroup;
-		children = (
-			2A2B3C4D5E6F7013,
-			2A2B3C4D5E6F7015,
-			2A2B3C4D5E6F7017,
-			2A2B3C4D5E6F701C,
-			2A2B3C4D5E6F7020,
-			2A2B3C4D5E6F7022,
-			2A2B3C4D5E6F7024,
-		);
-		path = Views;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7013 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = MenuBarView.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7017 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = SettingsView.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7015 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = CompactStatusView.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F701C = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = StatusBarContentView.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7020 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = HoverDetailView.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7022 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = MetricPalette.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7024 = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = PanelBackground.swift;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F7019 = {
-		isa = PBXGroup;
-		children = (
-			2A2B3C4D5E6F701A,
-		);
-		path = ViewModels;
-		sourceTree = "<group>";
-	};
-	2A2B3C4D5E6F701A = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.swift;
-		path = MetricsViewModel.swift;
-		sourceTree = "<group>";
-	};
-		1A1B2C3D4E5F6AAE = {
-			isa = PBXFileReference;
-			lastKnownFileType = folder.assetcatalog;
-			path = Assets.xcassets;
-			sourceTree = "<group>";
-		};
-		1A1B2C3D4E5F6AAF = {
-			isa = PBXGroup;
-			children = (
-				1A1B2C3D4E5F6AB1,
+		1A1B2C3D4E5F6AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
-			path = AppIcon.appiconset;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A1B2C3D4E5F6AB0 = {
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A1B2C3D4E5F6A7C /* StaBar */ = {
 			isa = PBXGroup;
 			children = (
-				1A1B2C3D4E5F6AB2,
+				1A1B2C3D4E5F6A8C /* StaBarApp.swift */,
+				1A1B2C3D4E5F6A9D /* ContentView.swift */,
+				2A2B3C4D5E6F7001 /* PreferencesStore.swift */,
+				1A1B2C3D4E5F6AAE /* Assets.xcassets */,
+				2A2B3C4D5E6F7002 /* Services */,
+				2A2B3C4D5E6F7012 /* Views */,
+				2A2B3C4D5E6F7019 /* ViewModels */,
 			);
-			path = AccentColor.colorset;
+			path = StaBar;
 			sourceTree = "<group>";
 		};
-		1A1B2C3D4E5F6AB1 = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.json;
-			path = Contents.json;
-			sourceTree = "<group>";
-		};
-		1A1B2C3D4E5F6AB2 = {
-			isa = PBXFileReference;
-			lastKnownFileType = text.json;
-			path = Contents.json;
-			sourceTree = "<group>";
-		};
-		1A1B2C3D4E5F6AC0 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = StaBarTests.swift;
-			sourceTree = "<group>";
-		};
-		3A3B4C5D6E7F8000 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = MetricsServiceTests.swift;
-			sourceTree = "<group>";
-		};
-		4A4B5C6D7E8F9000 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = HoverDetailViewTests.swift;
-			sourceTree = "<group>";
-		};
-		4A4B5C6D7E8F9002 = {
-			isa = PBXFileReference;
-			lastKnownFileType = sourcecode.swift;
-			path = StatusBarContentViewTests.swift;
-			sourceTree = "<group>";
-		};
-		1A1B2C3D4E5F6AC1 = {
+		1A1B2C3D4E5F6AC1 /* StaBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A1B2C3D4E5F6AC0,
-				3A3B4C5D6E7F8000,
-				4A4B5C6D7E8F9000,
-				4A4B5C6D7E8F9002,
+				1A1B2C3D4E5F6AC0 /* StaBarTests.swift */,
+				3A3B4C5D6E7F8000 /* MetricsServiceTests.swift */,
+				4A4B5C6D7E8F9000 /* HoverDetailViewTests.swift */,
+				4A4B5C6D7E8F9002 /* StatusBarContentViewTests.swift */,
 			);
 			path = StaBarTests;
 			sourceTree = "<group>";
 		};
-		1A1B2C3D4E5F6AC2 = {
+		1A1B2C3D4E5F6AD9 = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6A7C /* StaBar */,
+				1A1B2C3D4E5F6AC1 /* StaBarTests */,
+				1A1B2C3D4E5F6ADA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A1B2C3D4E5F6ADA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1B2C3D4E5F6AC7 /* StaBar.app */,
+				1A1B2C3D4E5F6AD2 /* StaBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A2B3C4D5E6F7002 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B3C4D5E6F7003 /* MetricsService.swift */,
+				2A2B3C4D5E6F7004 /* CPUReader.swift */,
+				2A2B3C4D5E6F7005 /* RAMReader.swift */,
+				2A2B3C4D5E6F7006 /* DiskReader.swift */,
+				2A2B3C4D5E6F7007 /* NetReader.swift */,
+				2A2B3C4D5E6F7008 /* GPUReader.swift */,
+				2A2B3C4D5E6F7010 /* LaunchAtLogin.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2A2B3C4D5E6F7012 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B3C4D5E6F7013 /* MenuBarView.swift */,
+				2A2B3C4D5E6F7015 /* CompactStatusView.swift */,
+				2A2B3C4D5E6F7017 /* SettingsView.swift */,
+				2A2B3C4D5E6F701C /* StatusBarContentView.swift */,
+				2A2B3C4D5E6F7020 /* HoverDetailView.swift */,
+				2A2B3C4D5E6F7022 /* MetricPalette.swift */,
+				2A2B3C4D5E6F7024 /* PanelBackground.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A2B3C4D5E6F7019 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A2B3C4D5E6F701A /* MetricsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1B2C3D4E5F6AC2 /* StaBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A1B2C3D4E5F6AC3;
+			buildConfigurationList = 1A1B2C3D4E5F6AC3 /* Build configuration list for PBXNativeTarget "StaBar" */;
 			buildPhases = (
-				1A1B2C3D4E5F6AC4,
-				1A1B2C3D4E5F6AC5,
-				1A1B2C3D4E5F6AC6,
+				1A1B2C3D4E5F6AC4 /* Sources */,
+				1A1B2C3D4E5F6AC5 /* Frameworks */,
+				1A1B2C3D4E5F6AC6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -255,238 +184,35 @@
 			);
 			name = StaBar;
 			productName = StaBar;
-			productReference = 1A1B2C3D4E5F6AC7;
+			productReference = 1A1B2C3D4E5F6AC7 /* StaBar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1A1B2C3D4E5F6AC3 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A1B2C3D4E5F6AC8,
-				1A1B2C3D4E5F6AC9,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A1B2C3D4E5F6AC4 = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A1B2C3D4E5F6ACA,
-				1A1B2C3D4E5F6ACB,
-				2A2B3C4D5E6F7009,
-				2A2B3C4D5E6F700A,
-				2A2B3C4D5E6F700B,
-				2A2B3C4D5E6F700C,
-				2A2B3C4D5E6F700D,
-				2A2B3C4D5E6F700E,
-				2A2B3C4D5E6F700F,
-				2A2B3C4D5E6F7011,
-			2A2B3C4D5E6F7014,
-			2A2B3C4D5E6F7016,
-			2A2B3C4D5E6F7018,
-				2A2B3C4D5E6F701B,
-				2A2B3C4D5E6F701D,
-				2A2B3C4D5E6F7021,
-				2A2B3C4D5E6F7023,
-				2A2B3C4D5E6F7025,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A1B2C3D4E5F6AC5 = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A1B2C3D4E5F6AC6 = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A1B2C3D4E5F6ACC,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A1B2C3D4E5F6AC7 = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.application;
-			includeInIndex = 0;
-			path = StaBar.app;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1A1B2C3D4E5F6AC8 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUNDLE_IDENTIFIER = com.user.Stabar;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				INFOPLIST_KEY_NSPrincipalClass = "";
-				MARKETING_VERSION = 1.1.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
-		1A1B2C3D4E5F6AC9 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				BUNDLE_IDENTIFIER = com.user.Stabar;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				INFOPLIST_KEY_NSPrincipalClass = "";
-				MARKETING_VERSION = 1.1.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		1A1B2C3D4E5F6ACD = {
+		1A1B2C3D4E5F6ACD /* StaBarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A1B2C3D4E5F6ACE;
+			buildConfigurationList = 1A1B2C3D4E5F6ACE /* Build configuration list for PBXNativeTarget "StaBarTests" */;
 			buildPhases = (
-				1A1B2C3D4E5F6ACF,
-				1A1B2C3D4E5F6AD0,
+				1A1B2C3D4E5F6ACF /* Sources */,
+				1A1B2C3D4E5F6AD0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1A1B2C3D4E5F6AD1,
+				1A1B2C3D4E5F6AD1 /* PBXTargetDependency */,
 			);
 			name = StaBarTests;
 			productName = StaBarTests;
-			productReference = 1A1B2C3D4E5F6AD2;
+			productReference = 1A1B2C3D4E5F6AD2 /* StaBarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1A1B2C3D4E5F6ACE = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A1B2C3D4E5F6AD3,
-				1A1B2C3D4E5F6AD4,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1A1B2C3D4E5F6ACF = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1A1B2C3D4E5F6AD5,
-				3A3B4C5D6E7F8001,
-				4A4B5C6D7E8F9001,
-				4A4B5C6D7E8F9003,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A1B2C3D4E5F6AD0 = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1A1B2C3D4E5F6AD1 = {
-			isa = PBXTargetDependency;
-			target = 1A1B2C3D4E5F6AC2;
-			targetProxy = 1A1B2C3D4E5F6AD6;
-		};
-		1A1B2C3D4E5F6AD2 = {
-			isa = PBXFileReference;
-			explicitFileType = wrapper.cfbundle;
-			includeInIndex = 0;
-			path = StaBarTests.xctest;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		1A1B2C3D4E5F6AD3 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_IDENTIFIER = com.user.StabarTests;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.1.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
-			};
-			name = Debug;
-		};
-		1A1B2C3D4E5F6AD4 = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_IDENTIFIER = com.user.StabarTests;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.1.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
-			};
-			name = Release;
-		};
-		1A1B2C3D4E5F6AD5 = {
-			isa = PBXBuildFile;
-			fileRef = 1A1B2C3D4E5F6AC0;
-		};
-		3A3B4C5D6E7F8001 = {
-			isa = PBXBuildFile;
-			fileRef = 3A3B4C5D6E7F8000;
-		};
-		4A4B5C6D7E8F9001 = {
-			isa = PBXBuildFile;
-			fileRef = 4A4B5C6D7E8F9000;
-		};
-		4A4B5C6D7E8F9003 = {
-			isa = PBXBuildFile;
-			fileRef = 4A4B5C6D7E8F9002;
-		};
-		1A1B2C3D4E5F6AD6 = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1A1B2C3D4E5F6AD7;
-			proxyType = 1;
-			remoteGlobalIDString = 1A1B2C3D4E5F6AC2;
-			remoteInfo = StaBar;
-		};
-		1A1B2C3D4E5F6AD7 = {
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A1B2C3D4E5F6AD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					1A1B2C3D4E5F6AC2 = {
 						CreatedOnToolsVersion = 15.4;
@@ -497,7 +223,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A1B2C3D4E5F6AD8;
+			buildConfigurationList = 1A1B2C3D4E5F6AD8 /* Build configuration list for PBXProject "StaBar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -506,42 +232,168 @@
 				Base,
 			);
 			mainGroup = 1A1B2C3D4E5F6AD9;
-			productRefGroup = 1A1B2C3D4E5F6ADA;
+			productRefGroup = 1A1B2C3D4E5F6ADA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A1B2C3D4E5F6AC2,
-				1A1B2C3D4E5F6ACD,
+				1A1B2C3D4E5F6AC2 /* StaBar */,
+				1A1B2C3D4E5F6ACD /* StaBarTests */,
 			);
 		};
-		1A1B2C3D4E5F6AD8 = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1A1B2C3D4E5F6ADB,
-				1A1B2C3D4E5F6ADC,
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A1B2C3D4E5F6AC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6ACC /* Assets.xcassets in Resources */,
 			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A1B2C3D4E5F6AD9 = {
-			isa = PBXGroup;
-			children = (
-				1A1B2C3D4E5F6A7C,
-				1A1B2C3D4E5F6AC1,
-				1A1B2C3D4E5F6ADA,
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A1B2C3D4E5F6AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6ACA /* StaBarApp.swift in Sources */,
+				1A1B2C3D4E5F6ACB /* ContentView.swift in Sources */,
+				2A2B3C4D5E6F7009 /* PreferencesStore.swift in Sources */,
+				2A2B3C4D5E6F700A /* MetricsService.swift in Sources */,
+				2A2B3C4D5E6F700B /* CPUReader.swift in Sources */,
+				2A2B3C4D5E6F700C /* RAMReader.swift in Sources */,
+				2A2B3C4D5E6F700D /* DiskReader.swift in Sources */,
+				2A2B3C4D5E6F700E /* NetReader.swift in Sources */,
+				2A2B3C4D5E6F700F /* GPUReader.swift in Sources */,
+				2A2B3C4D5E6F7011 /* LaunchAtLogin.swift in Sources */,
+				2A2B3C4D5E6F7014 /* MenuBarView.swift in Sources */,
+				2A2B3C4D5E6F7016 /* CompactStatusView.swift in Sources */,
+				2A2B3C4D5E6F7018 /* SettingsView.swift in Sources */,
+				2A2B3C4D5E6F701B /* MetricsViewModel.swift in Sources */,
+				2A2B3C4D5E6F701D /* StatusBarContentView.swift in Sources */,
+				2A2B3C4D5E6F7021 /* HoverDetailView.swift in Sources */,
+				2A2B3C4D5E6F7023 /* MetricPalette.swift in Sources */,
+				2A2B3C4D5E6F7025 /* PanelBackground.swift in Sources */,
 			);
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A1B2C3D4E5F6ADA = {
-			isa = PBXGroup;
-			children = (
-				1A1B2C3D4E5F6AC7,
-				1A1B2C3D4E5F6AD2,
+		1A1B2C3D4E5F6ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1B2C3D4E5F6AD5 /* StaBarTests.swift in Sources */,
+				3A3B4C5D6E7F8001 /* MetricsServiceTests.swift in Sources */,
+				4A4B5C6D7E8F9001 /* HoverDetailViewTests.swift in Sources */,
+				4A4B5C6D7E8F9003 /* StatusBarContentViewTests.swift in Sources */,
 			);
-			name = Products;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1A1B2C3D4E5F6ADB = {
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A1B2C3D4E5F6AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1B2C3D4E5F6AC2 /* StaBar */;
+			targetProxy = 1A1B2C3D4E5F6AD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A1B2C3D4E5F6AC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUNDLE_IDENTIFIER = com.user.Stabar;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A1B2C3D4E5F6AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUNDLE_IDENTIFIER = com.user.Stabar;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.Stabar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1A1B2C3D4E5F6AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_IDENTIFIER = com.user.StabarTests;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
+			};
+			name = Debug;
+		};
+		1A1B2C3D4E5F6AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_IDENTIFIER = com.user.StabarTests;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.user.StabarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaBar.app/Contents/MacOS/StaBar";
+			};
+			name = Release;
+		};
+		1A1B2C3D4E5F6ADB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -574,6 +426,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -598,12 +451,13 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1A1B2C3D4E5F6ADC = {
+		1A1B2C3D4E5F6ADC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -636,6 +490,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -654,87 +509,43 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		1A1B2C3D4E5F6ACA = {
-			isa = PBXBuildFile;
-			fileRef = 1A1B2C3D4E5F6A8C;
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A1B2C3D4E5F6AC3 /* Build configuration list for PBXNativeTarget "StaBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6AC8 /* Debug */,
+				1A1B2C3D4E5F6AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		1A1B2C3D4E5F6ACB = {
-			isa = PBXBuildFile;
-			fileRef = 1A1B2C3D4E5F6A9D;
+		1A1B2C3D4E5F6ACE /* Build configuration list for PBXNativeTarget "StaBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6AD3 /* Debug */,
+				1A1B2C3D4E5F6AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		1A1B2C3D4E5F6ACC = {
-			isa = PBXBuildFile;
-			fileRef = 1A1B2C3D4E5F6AAE;
+		1A1B2C3D4E5F6AD8 /* Build configuration list for PBXProject "StaBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1B2C3D4E5F6ADB /* Debug */,
+				1A1B2C3D4E5F6ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-	2A2B3C4D5E6F7009 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7001;
+/* End XCConfigurationList section */
 	};
-	2A2B3C4D5E6F700A = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7003;
-	};
-	2A2B3C4D5E6F700B = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7004;
-	};
-	2A2B3C4D5E6F700C = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7005;
-	};
-	2A2B3C4D5E6F700D = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7006;
-	};
-	2A2B3C4D5E6F700E = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7007;
-	};
-	2A2B3C4D5E6F700F = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7008;
-	};
-	2A2B3C4D5E6F7011 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7010;
-	};
-	2A2B3C4D5E6F7014 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7013;
-	};
-	2A2B3C4D5E6F7018 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7017;
-	};
-	2A2B3C4D5E6F7016 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7015;
-	};
-	2A2B3C4D5E6F701B = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F701A;
-	};
-	2A2B3C4D5E6F701D = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F701C;
-	};
-	2A2B3C4D5E6F7021 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7020;
-	};
-	2A2B3C4D5E6F7023 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7022;
-	};
-	2A2B3C4D5E6F7025 = {
-		isa = PBXBuildFile;
-		fileRef = 2A2B3C4D5E6F7024;
-	};
-	};
-	rootObject = 1A1B2C3D4E5F6AD7;
+	rootObject = 1A1B2C3D4E5F6AD7 /* Project object */;
 }
