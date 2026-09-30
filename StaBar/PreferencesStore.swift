@@ -35,6 +35,16 @@ final class PreferencesStore {
         didSet { defaults.set(netUnit, forKey: "netUnit") }
     }
     
+    /// Whether hovering the status item reveals the detailed drop-down panel
+    var hoverDetailEnabled: Bool {
+        didSet { defaults.set(hoverDetailEnabled, forKey: "hoverDetailEnabled") }
+    }
+    
+    /// How long the pointer must rest on the status item before the panel appears
+    var hoverDelay: Double {
+        didSet { defaults.set(hoverDelay, forKey: "hoverDelay") }
+    }
+    
     var launchAtLogin: Bool {
         get { LaunchAtLogin.isEnabled }
         set { LaunchAtLogin.setEnabled(newValue) }
@@ -49,6 +59,8 @@ final class PreferencesStore {
         self.refreshInterval = defaults.double(forKey: "refreshInterval", default: 2.0)
         let savedUnit = defaults.string(forKey: "netUnit") ?? "Mbps"
         self.netUnit = (savedUnit == "MB/s") ? "Mbps" : savedUnit
+        self.hoverDetailEnabled = defaults.bool(forKey: "hoverDetailEnabled", default: true)
+        self.hoverDelay = defaults.double(forKey: "hoverDelay", default: 2.0)
         self.launchAtLogin = defaults.bool(forKey: "launchAtLogin", default: false)
     }
     
@@ -60,6 +72,8 @@ final class PreferencesStore {
         showNet = true
         refreshInterval = 2.0
         netUnit = "Mbps"
+        hoverDetailEnabled = true
+        hoverDelay = 2.0
         launchAtLogin = false
     }
 }

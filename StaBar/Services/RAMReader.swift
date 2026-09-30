@@ -6,10 +6,26 @@ import Darwin
 public class RAMReader: MetricReader {
     public typealias Output = Double
     
+    /// Detailed RAM figures (bytes) used by the hover detail panel
+    public struct Detail {
+        public let used: Double
+        public let total: Double
+    }
+    
     /// Reads system RAM usage percentage
     /// - Returns: RAM usage as a percentage (0.0-100.0)
     /// - Throws: MetricError if unable to read RAM stats
     public func read() throws -> Double {
+        let detail = try readDetail()
+        guard detail.total > 0 else { return 0 }
+        let percentage = (detail.used / detail.total) * 100.0
+        return min(100.0, max(0.0, percentage))
+    }
+    
+    /// Reads used / total memory in bytes
+    /// - Returns: used and total physical memory in bytes
+    /// - Throws: MetricError if unable to read RAM stats
+    public func readDetail() throws -> Detail {
         var stats = vm_statistics64()
         var count = UInt32(MemoryLayout<vm_statistics64_data_t>.size / MemoryLayout<integer_t>.size)
         
@@ -34,9 +50,7 @@ public class RAMReader: MetricReader {
         let usedPages = Double(stats.active_count + stats.wire_count + stats.purgeable_count + stats.external_page_count)
         let usedMemory = usedPages * pageSize
         
-        let usagePercentage = (usedMemory / totalMemory) * 100.0
-        
-        // Clamp to 0-100 range to handle edge cases
-        return min(100.0, max(0.0, usagePercentage))
+        // Never report more than the physical capacity (defensive clamping)
+        return Detail(used: min(usedMemory, totalMemory), total: totalMemory)
     }
 }
